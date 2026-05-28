@@ -1,0 +1,134 @@
+.projects-page{
+  min-height:100vh;
+  padding:120px 20px;
+  background:linear-gradient(135deg,#240046,#5a189a);
+  color:white;
+  text-align:center;
+}
+
+/* TITLE */
+
+.projects-page h1{
+  font-size:52px;
+  margin-bottom:40px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+/* VERTICAL LIST */
+
+.projects-container{
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+  max-width:850px;
+  margin:auto;
+}
+
+/* CARD - GLASS PURPLE STYLE */
+
+.project-card{
+  background:rgba(255,255,255,0.10);
+  border:1px solid rgba(255,255,255,0.25);
+  padding:28px;
+  border-radius:18px;
+  text-align:left;
+
+  backdrop-filter:blur(12px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+  transition:0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.project-card:hover{
+  transform:translateY(-8px);
+  background:rgba(255,255,255,0.18);
+  box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* STATUS BADGE */
+
+.status{
+  display:inline-block;
+  padding:6px 14px;
+  border-radius:25px;
+  background:#ffffff;
+  color:#5a189a;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:12px;
+}
+
+/* TEXT */
+
+.project-card h2{
+  font-size:26px;
+  margin-bottom:10px;
+  color:#f8d7ff;
+  font-weight:800;
+}
+
+.project-card p{
+  font-size:16px;
+  line-height:1.6;
+  color:#f3e8ff;
+}
+.modal-overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+.modal-box{
+  background:white;
+  color:black;
+  padding:25px;
+  border-radius:15px;
+  width:90%;
+  max-width:500px;
+  animation:pop 0.3s ease;
+}
+
+@keyframes pop{
+  from{transform:scale(0.8); opacity:0;}
+  to{transform:scale(1); opacity:1;}
+}
+
+.modal-img{
+  width:100%;
+  border-radius:10px;
+  margin:10px 0;
+}
+
+.modal-box button{
+  margin-top:15px;
+  padding:10px 20px;
+  border:none;
+  background:#5a189a;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+.github-link{
+  display:inline-block;
+  margin-top:10px;
+  color:#ffffff;
+  background:#5a189a;
+  padding:8px 15px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.github-link:hover{
+  background:#7b2cbf;
+}
